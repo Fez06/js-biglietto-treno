@@ -17,9 +17,9 @@ console.log(prezzoBaseTragitto);
 //ora, a seconda dell'eta' forniro' il prezzo con la scontistica giusta se presente o quello base con sole due cifre decimali
 
 if (etaUtente < 18) {
-    console.log(`per te al prezzo agevolato di ${prezzoBaseTragitto * 0.8}€`)
+    console.log(`per te al prezzo agevolato di ${prezzoBaseTragitto * 0.8.toFixed(2)}€`)
 } else if (etaUtente > 65) {
-    console.log(`per lei al prezzo agevolato di ${prezzoBaseTragitto * 0.6}€`)
+    console.log(`per lei al prezzo agevolato di ${prezzoBaseTragitto * 0.6.toFixed(2)}€`)
 } else {
     console.log(`per lei alla tariffa standard di ${prezzoBaseTragitto}€`)
 }
